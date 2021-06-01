@@ -13,6 +13,7 @@ python3 duee_fin_data_prepare.py
 ### 训练
 
 - 在`./output/DuEE-Fin/`文件夹下生成 trigger, role, enum, sentence 的`best_model.pkl`文件
+- epoch 设置可以在`./utils/finetuning_argparse.py`文件中更改
 
 ```bash
 CUDA_VISIBLE_DEVICES=3 python run_ner.py --dataset=DuEE-Fin --event_type=trigger --max_len=256 --per_gpu_train_batch_size=2 --per_gpu_eval_batch_size=2 --model_name_or_path=/home/hanqing/bixingjian/pretrained-model/chinese-roberta-wwm-ext-large --linear_learning_rate=1e-4 --early_stop=2
