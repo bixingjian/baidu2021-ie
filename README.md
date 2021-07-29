@@ -42,3 +42,27 @@ CUDA_VISIBLE_DEVICES=3 python predict_cls.py --dataset=DuEE-Fin --event_type=enu
 ```bash
 CUDA_VISIBLE_DEVICES=3 python duee_fin_postprocess.py --trigger_file=./output/DuEE-Fin/trigger/test_result.json --role_file=./output/DuEE-Fin/role/test_result.json --enum_file=./output/DuEE-Fin/enum/test_result.json --schema_file=./conf/DuEE-Fin/event_schema.json --save_path=./output/DuEE-Fin/duee-fin.json
 ```
+
+## mrc
+
+比赛链接:https://aistudio.baidu.com/aistudio/competition/detail/66?isFromLuge=true
+
+### 环境
+
+- python=3.6
+- torch=1.7
+- transformers=4.5.0
+
+### 训练示例
+
+训练
+
+```
+python run.py --max_len=256 --model_name_or_path="/home/hanqing/bixingjian/pretrained-model/chinese-roberta-wwm-ext-large" --per_gpu_train_batch_size=8 --per_gpu_eval_batch_size=32 --learning_rate=1e-5 --linear_learning_rate=1e-4 --num_train_epochs=20 --output_dir="./output" --weight_decay=0.01 --early_stop=3
+```
+
+预测
+
+```
+python predict.py --max_len=512 --model_name_or_path="/home/hanqing/bixingjian/pretrained-model/chinese-roberta-wwm-ext-large" --per_gpu_eval_batch_size=32 --output_dir="./output" --fine_tunning_model=微调后的模型路径
+```

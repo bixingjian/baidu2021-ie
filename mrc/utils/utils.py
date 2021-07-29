@@ -1,11 +1,3 @@
-"""
-@Time : 2021/2/78:58
-@Auth : 周俊贤
-@File ：utils.py
-@DESCRIPTION:
-
-"""
-
 import os
 import numpy as np
 import random

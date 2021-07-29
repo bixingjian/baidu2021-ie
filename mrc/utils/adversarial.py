@@ -1,11 +1,3 @@
-"""
-@Time : 2020/12/149:57
-@Auth : 周俊贤
-@File ：adversarial.py
-@DESCRIPTION: 对抗学习
-
-"""
-
 import torch
 
 class FGM():

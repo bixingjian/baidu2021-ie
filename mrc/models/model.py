@@ -27,4 +27,4 @@ class MRC_model(nn.Module):
         return start_logits, end_logits, cls_logits
 
 if __name__ == '__main__':
-    model = MRC_model("/data/zhoujx/prev_trained_model/rbt3")
+    model = MRC_model("/home/hanqing/bixingjian/pretrained-model/chinese-roberta-wwm-ext-large")

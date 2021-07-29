@@ -1,10 +1,3 @@
-"""
-@Time : 2020/12/1110:44
-@Auth : 周俊贤
-@File ：run.py
-@DESCRIPTION:
-
-"""
 import copy
 import json
 import os

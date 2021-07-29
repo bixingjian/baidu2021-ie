@@ -1,11 +1,3 @@
-"""
-@Time : 2021/4/98:43
-@Auth : 周俊贤
-@File ：dataset.py
-@DESCRIPTION:
-
-"""
-
 import json
 import torch
 import pandas as pd
@@ -13,7 +5,7 @@ import pandas as pd
 from transformers import BertTokenizerFast
 from torch.utils.data import Dataset
 
-tokenizer = BertTokenizerFast.from_pretrained("/data/zhoujx/prev_trained_model/rbt3")
+tokenizer = BertTokenizerFast.from_pretrained("/home/hanqing/bixingjian/pretrained-model/chinese-roberta-wwm-ext-large")
 
 
 class MrcDataset(Dataset):

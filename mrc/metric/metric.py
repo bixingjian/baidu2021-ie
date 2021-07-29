@@ -1,10 +1,3 @@
-"""
-@Time : 2021/4/916:56
-@Auth : 周俊贤
-@File ：metric.py
-@DESCRIPTION:
-
-"""
 import collections
 import numpy as np
 

@@ -11,7 +11,7 @@ def get_argparse():
 
     # 训练的参数
     parser.add_argument("--do_distri_train", action="store_true", help="是否用两个卡并行训练")
-    parser.add_argument("--model_name_or_path", default="/data/zhoujx/prev_trained_model/chinese_roberta_wwm_ext_pytorch", type=str, help="预训练模型的路径")
+    parser.add_argument("--model_name_or_path", default="/home/hanqing/bixingjian/pretrained-model/chinese-roberta-wwm-ext-large", type=str, help="预训练模型的路径")
     parser.add_argument("--num_train_epochs", default=50.0, type=float, help="训练轮数")
     parser.add_argument("--early_stop", default=8, type=int, help="早停")
     parser.add_argument("--learning_rate", default=1e-5, type=float, help="transformer层学习率")
