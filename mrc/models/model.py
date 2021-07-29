@@ -19,8 +19,8 @@ class MRC_model(nn.Module):
                            attention_mask=attention_mask)
         sequence_output, pooled_output = output[0], output[1]
         logits = self.classifier(sequence_output)
-        start_logits, end_logits = logits.chunk(2, dim=-1)
-        start_logits = start_logits.squeeze(dim=-1)
+        start_logits, end_logits = logits.chunk(2, dim=-1) #! chuck 再dim上将tensor分成chunk_num个tensor(2个)
+        start_logits = start_logits.squeeze(dim=-1) #! 将logtis再最后一个dim上切分成两个:前一个是start logits, 后一个是end logits.  (start和end的维度是batch*seq*1)
         end_logits = end_logits.squeeze(dim=-1)
         cls_logits = self.classifier_cls(pooled_output)
 

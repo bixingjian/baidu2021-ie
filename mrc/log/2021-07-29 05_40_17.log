@@ -1,0 +1,26 @@
+The nums of the train_dataset examples is 3000
+The nums of the train_dataset features is 4725
+The nums of the eval_dataset examples is 1130
+The nums of the eval_dataset features is 1699
+***** Running train *****
+***** Running Evalation *****
+The F1-score is 0.5968830357193288, The EM-score is 0.5433628318584071
+the best eval f1 is 0.5969, saving model !!
+***** Running train *****
+***** Running Evalation *****
+The F1-score is 0.6358527640806847, The EM-score is 0.515929203539823
+the best eval f1 is 0.6359, saving model !!
+***** Running train *****
+***** Running Evalation *****
+The F1-score is 0.6581953846863943, The EM-score is 0.5486725663716814
+the best eval f1 is 0.6582, saving model !!
+***** Running train *****
+***** Running Evalation *****
+The F1-score is 0.6233587063292905, The EM-score is 0.49380530973451325
+***** Running train *****
+***** Running Evalation *****
+The F1-score is 0.6579548455439681, The EM-score is 0.5513274336283186
+***** Running train *****
+***** Running Evalation *****
+The F1-score is 0.6325430790942138, The EM-score is 0.504424778761062
+Early stop in 5 epoch!

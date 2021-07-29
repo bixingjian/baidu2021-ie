@@ -1,0 +1,5 @@
+The nums of the train_dataset examples is 3000
+The nums of the train_dataset features is 4725
+The nums of the eval_dataset examples is 1130
+The nums of the eval_dataset features is 1699
+***** Running train *****
